@@ -42,13 +42,20 @@ class calculadora {
     }
 }
 
-//Le pido al usuario que ingrese la temperatura
 
+//Le pido al usuario que ingrese la temperatura
 let numero = parseInt( prompt("Ingrese el monto que quiere convertir"));
 
-//Luego le pido al usuario que eliga la medida en la que quiere realizar la conversion 
+//Defino la arrya
+const opcionUsuario = ["celsius a fahrenheit", "celsius a kalvin", "fahrenheit a celsius", "fahrenheit a kalvin", "kalvin a celsius", "kalvin a fahrenheit"];
 
-let opcion = prompt("Seleccione la unidad de medida en la que quere la convercion:\n celsius a fahrenheit \n celsius a kalvin \n fahrenheit a celsius \n fahrenheit a kalvin \n kalvin a celsius \n kalvin a fahrenheit");
+//Luego le pido al usuario que eliga la medida en la que quiere realizar la conversion 
+const opcion = prompt("Seleccione la unidad de medida en la que quere la convercion:\n celsius a fahrenheit \n celsius a kalvin \n fahrenheit a celsius \n fahrenheit a kalvin \n kalvin a celsius \n kalvin a fahrenheit")
+
+    if (opcionUsuario.indexOf(opcion) !==-1) {}
+    else {
+        console.log("Unidad seleccionada invalida")
+    }
 
 let calculo = new calculadora(numero)
 
